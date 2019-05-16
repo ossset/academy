@@ -206,6 +206,7 @@ more.addEventListener('click', () => {
      e.preventDefault();
      gapi.load('client', () => {
          search(document.querySelector('.search > input').value)
+         document.querySelector('.search > input').value = '';
      })
  });
 
